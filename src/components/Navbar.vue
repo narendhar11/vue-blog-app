@@ -24,6 +24,9 @@
         <li class="nav-item" v-if="!authUser" >
             <router-link class="nav-link" to="/signup">Signup</router-link>
         </li>
+        <li class="nav-item" v-if="authUser" >
+            <router-link class="nav-link" to="/article/create">Add New Article</router-link>
+        </li>
         <li class="nav-item dropdown" v-if="authUser">
           <a
             class="nav-link dropdown-toggle"
